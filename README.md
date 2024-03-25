@@ -1,1 +1,1 @@
-# music-app
+# music-player-app
