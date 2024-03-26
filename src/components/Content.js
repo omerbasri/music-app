@@ -4,7 +4,7 @@ export default function Content()
 {
     return(
        <main className="flex-auto">
-        <h1>Content</h1>
+        <h1>Cs</h1>
             <Navbar />
        </main>
 

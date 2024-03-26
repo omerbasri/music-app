@@ -3,7 +3,7 @@ export default function Navbar()
     return(
 
         <>
-            <p>Navbar</p>
+            <p>N</p>
         </>
 
 
