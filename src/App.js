@@ -10,8 +10,10 @@ function App() {
       <div className="wrapper">
         <SideBar/>
         <Content/>
+        
       </div>
         <Footer/>
+        
     </>
   );
 }

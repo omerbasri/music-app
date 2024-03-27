@@ -2,11 +2,12 @@ import searchlogo from "img/search-svgrepo-com.svg"
 import like from "img/like-heart.svg"
 import create from "img/create.svg"
 import playlist from "img/playlist-minimalistic-2-svgrepo-com.svg"
+import login from "img/login-logo.svg"
 
 export default function Menu()
 {
     return(
-
+        <>
         <nav className="px-7 my-12">
             <ul className="space-y-5 flex flex-col ">
                 <li className="flex items-center w-4/6">
@@ -26,10 +27,11 @@ export default function Menu()
                     <img className="max-w-4" src={playlist} />
                     <a href="#" className="px-2 flex items-center text-sm font-semibold text-link hover:text-white">Your Playlists</a>
                 </li>
+                
             </ul>
-
+                 
         </nav>
-
-
+            
+        </>
     )
 }
