@@ -11,7 +11,8 @@ module.exports = {
         sidebar: '#303030',
         active: '#d1d0d7',
         link: '#b3b3b3',
-        footer: '#242424'
+        footer: '#242424',
+        hoverSidebar: '#404040'
       }
 
     },

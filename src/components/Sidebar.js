@@ -1,10 +1,14 @@
 import logo from "img/music-player-headphones-svgrepo-com (2).svg"
-import Menu from "components/SideBar/Menu"
 import Button from "./Button"
-import SearchLogo from "components/svg/search-logo"
+import SearchLogo from "img/search-svgrepo-com.svg"
+import like from "img/like-heart.svg"
+import createPlaylist from "img/create.svg"
+import yourPlaylist from "img/playlist-minimalistic-2-svgrepo-com.svg"
+import login from "img/login-logo.svg"
 
 
-
+const logos = [SearchLogo, like, createPlaylist, yourPlaylist];
+const logoNames = ["Search", "Favorites", "Create Playlist", "Your Playlist"];
 
 export default function SideBar()
 {
@@ -15,8 +19,10 @@ export default function SideBar()
 
             <span className="px-7 mb-12 " >Music Player App</span>
 
-            <Button name="hello" 
-             svg={<SearchLogo />}/>
+            {logos.map((data,index)=>(
+                <Button key={index} svg={data} name={logoNames[index]}/>))}
+
+           <div className="mt-auto mb-12 "> <Button name="Login" svg={login} /></div>
     
         </aside>
 
