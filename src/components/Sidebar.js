@@ -5,10 +5,11 @@ import like from "img/like-heart.svg"
 import createPlaylist from "img/create.svg"
 import yourPlaylist from "img/playlist-minimalistic-2-svgrepo-com.svg"
 import login from "img/login-logo.svg"
+import register from "img/register.svg"
 
 
-const logos = [SearchLogo, like, createPlaylist, yourPlaylist];
-const logoNames = ["Search", "Favorites", "Create Playlist", "Your Playlist"];
+const logos = [SearchLogo, like, createPlaylist, yourPlaylist, register, login ];
+const logoNames = ["Search", "Favorites", "Create Playlist", "Your Playlist", "Sign up","Login"];
 
 export default function SideBar()
 {
@@ -21,8 +22,6 @@ export default function SideBar()
 
             {logos.map((data,index)=>(
                 <Button key={index} svg={data} name={logoNames[index]}/>))}
-
-           <div className="mt-auto mb-12 "> <Button name="Login" svg={login} /></div>
     
         </aside>
 
