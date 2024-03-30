@@ -1,21 +1,6 @@
-import Content from "components/Content"
-import SideBar from "components/Sidebar"
-import Footer from "components/Footer";
+import { useRoutes } from "react-router-dom";
+import routes from "routes";
 
-
-
-function App() {
-  return (
-    <>
-      <div className="wrapper">
-        <SideBar/>
-        <Content/>
-        
-      </div>
-        <Footer/>
-        
-    </>
-  );
+export default function App() {
+  return useRoutes(routes);
 }
-
-export default App;
