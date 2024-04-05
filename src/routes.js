@@ -1,9 +1,15 @@
 import Home from "pages/Home";
+import Login from "pages/Login";
 
 const routes = [
   {
-    path: "/",
-    element: <Home />,
+    path: "/home",
+    element: <Home />
   },
+  {
+    path:"/",
+    element: <Login />  
+  }
+
 ];
 export default routes;
