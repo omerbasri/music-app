@@ -8,8 +8,5 @@ export default function Content()
             <Navbar />
        </main>
 
-
     )
-
-
 }
