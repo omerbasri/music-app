@@ -1,15 +1,19 @@
 import Home from "pages/Home";
 import Login from "pages/Login";
+import Register from "pages/Register";
 
 const routes = [
   {
     path: "/home",
-    element: <Home />
+    element: <Home />,
   },
   {
-    path:"/",
-    element: <Login />  
-  }
-
+    path: "/register",
+    element: <Register />,
+  },
+  {
+    path: "/",
+    element: <Login />,
+  },
 ];
 export default routes;
