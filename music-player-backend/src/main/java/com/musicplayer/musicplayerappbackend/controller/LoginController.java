@@ -24,8 +24,6 @@ public class LoginController {
     {
         String username = loginUser.getUsername();
         String password = loginUser.getPassword();
-        System.out.println(username);
-        System.out.println(password);
 
         if(service.authenticateUser(username,password))
         {
