@@ -13,12 +13,13 @@ export default function Login() {
     e.preventDefault();
 
     const requestBody = {
-      username: username,
+      userName: username,
+      email: email,
       password: password,
     };
 
     try {
-      const response = await fetch("http://localhost:8080/login", {
+      const response = await fetch("http://localhost:8080/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -30,18 +31,21 @@ export default function Login() {
       const data = await response.json();
       if (data.token) {
         console.log(data.token);
-        goHomePage();
+        goLoginPage();
       }
     } catch (error) {
       console.error("Error:", error);
     }
 
-    function goHomePage() {
-      navigate("/home");
+    function goLoginPage() {
+      navigate("/");
     }
   };
-  function goRegisterPage() {
-    navigate("/register");
+
+  function passwordControl() {
+    if (password !== confirmPassword) {
+      alert("Passwords must match");
+    }
   }
 
   return (
@@ -96,6 +100,7 @@ export default function Login() {
         <button
           type="submit"
           className="border-2 border-hoverSidebar-200 hover:bg-hoverSidebar rounded p-1 mt-3"
+          onClick={passwordControl}
         >
           Create Account
         </button>
